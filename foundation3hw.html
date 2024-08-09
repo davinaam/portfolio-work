@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Preference Form</title>
+</head>
+<body>
+
+<header>
+    <h2>Hello my name is Davina May.</h2>
+<p>I am currently a Medical Assistant and birth doula. On my free time i enjoy reading and eating. I love to try new foods and a good romance book is something you may always find on my nightstand.
+</p>
+</header>
+<main>
+    <div id="form_checkbox"> 
+        <fieldset>   
+    <legend>Select Your Dietary Preferences:</legend>
+        <label>
+        <input type="checkbox"name="preference"value="Vegetairian">Vegetairian
+        </label><br>
+        <label>
+            <input type="checkbox"name="preference"value="Vegan">Vegan
+            </label><br>
+            <label>
+                <input type="checkbox"name="preference"value="Pescatarian">Pescatarian
+                </label><br>
+                <label>
+                    <input type="checkbox"name="preference"value="Paleo">Paleo
+                    </label><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                    <legend>Select Your Favorite Cuisine:</legend>
+                    <div id="form_radio">
+                    
+                            <label>
+                            <input type="radio"name="preference"value="Dominican"> Dominican
+                            </label><br>
+                            <label>
+                            <input type="radio"name="preference"value="Jamaican"> Jamaican
+                            </label><br>
+                            <label>
+                            <input type="radio"name="preference"value="Thai"> Thai
+                            </label><br>
+                            <label>  
+                            <input type="radio"name="preference"value="Soul Food"> Soul Food
+                            </label><br>
+                        </form>
+                    </div>
+                    </fieldset>
+                    <div id="Favorite_Foods"> 
+        
+</div>
+<br>
+<label>Favorite Foods:</label>
+<label>
+<form method="post">
+    Dietary Restrictions:<input type="text"name="name"><input type="submit"><br>
+    Favorite Food:<input type="text"name="Favorite Food"><input type="submit"><br>
+    <input type="text"placeholder="Your Name Here">
+</form><br>
+</label>
+<div id="Additional_Notes">
+    <label>
+        <label>Additional Notes:</label>
+        <form>
+            <textarea name="notes"></textarea><br>
+            <input type="text"placeholder="Your Name Here">
+        </form><br>
+    </label>
+</div>
+<div id="Number_of_meals_per_day">
+<form>
+    Number of Meals Per Day:<input type="number"min="1"max="9">
+</form><br>
+<form>
+  Favorite Dish:<input type="text"placeholder="text limit=10 chars" maxlewngth="10">
+</form><br>
+<form>
+  Dish Description:<input type="text"placeholder="text limit=10 chars" maxlewngth="10">
+</form><br>
+</div>
+<div id="unavailable-food">
+    <form>
+        <label>Unavailable Foods:</label>
+        <input type="text"placeholder="Pork chops"disbaled>
+    </form><br>
+    <form>
+    <label>Read Only:</label>
+        <input type="text"placeholder="We do not offer pork"readonly>
+    </form><br>
+</div>
+
+
+<div id="calorie_count">
+    <label for="calorie_count">Calorie Count:</label>
+<input type="range" id="calorie_count" name="calorie_count" min="0" max="5000" value="2500" onchange="document.getElementById('calorie_count_display').innerText = this.value">
+<span id="calorie_count_display">2500</span> calories
+
+<label for="serving_size">Serving Size:</label>
+<input type="number" id="serving_size" name="serving_size" min="0" max="5000" value="2500">
+    <form>
+        <label>Calorie Display:</label><br>
+            <input type="text"placeholder="Calories"readonly>
+        </form><br>
+</div>
+<div id="beverage_type">
+        <h3>Preferred Beverage</h3>
+        <label for="Preferred Beverage">Choose A Beverage:</label>
+        <select id="beverage_type">
+                <option value="Water">Water</option>
+                <option value="Soda">Soda</option>
+                <option value="Juice">Juice</option>
+                <option value="Tea">Tea</option>
+            </select>
+    </form><br>
+    <form>
+    <h3>Beverage Type</h3>
+    <form>
+    <label for="Alchoholic_Beverage">Alchoholic Beverage</label>
+    <select id="Beverage Types"name="Beverage Types">
+        <optgroup label="Alchoholic Beverages">
+            <option value="Tequila">Tequila</option>
+            <option value="Vodka">Vodka</option>
+            <option value="Rum">Rum</option>
+            <option value="Whiskey">Whiskey</option>
+        </optgroup>
+        <optgroup label="Non-Alchoholic Beverages">
+            <option value="Water">Water</option>
+            <option value="Juice">Juice</option>
+            <option value="Soda">Soda</option>
+            <option value="Tea">Soda</option>
+        </optgroup>
+    </select>
+    </form><br>
+</div>
+</body>
+
+
+
+<header>
+
+</header>
+</main>
+</html>
